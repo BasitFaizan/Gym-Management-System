@@ -6,7 +6,7 @@ body{
   padding: 0;
   box-sizing: border-box;
   width: 100vw;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 .fit-image{
   width: 100%;
