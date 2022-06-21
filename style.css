@@ -23,6 +23,19 @@ body{
 .hamburger{
   display: none;
 }
+.secondPart{
+  
+  width: 60vw;
+}
 .secondPart ul{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.secondPart ul li{
+  color: white;
+  list-style: none;
+}
+.thirdPart{
+  width: 20vw;
 }
