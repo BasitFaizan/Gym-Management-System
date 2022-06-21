@@ -5,9 +5,11 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100vw;
+  overflow-y: hidden;
 }
 .fit-image{
-  width: 100vw;
+  width: 100%;
 }
 .navbar{
   width: 100vw;
@@ -18,23 +20,81 @@ body{
   top: 0;
   left: 0;
   z-index: 100;
+  justify-content: space-between;
 }
 .hamburger{
   display: none;
 }
+.firstPart{
+  width: 10vw;
+  color: #fff;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.navbarLogo{
+  font-size: 2.7rem;
+  font-weight: 600;
+}
 .secondPart{
-  
-  width: 60vw;
+  width: 40vw;
+  height: 7rem;
 }
 .secondPart ul{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
 }
 .secondPart ul li{
   color: white;
   list-style: none;
+  font-size: 1.5rem;
 }
 .thirdPart{
-  width: 20vw;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  margin-right: 2rem;
+}
+.drop{
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.drop span{
+  margin-right: 0.4rem;
+}
+.dropDown{
+  position: absolute;
+  top: 10rem;
+  left: 5rem;
+  pointer-events: none;
+  opacity: 0;
+  width: 20rem;
+  height: 20rem;
+  background: rgb(0, 119, 255);
+  border-radius: 1rem;
+  transition: all 0.5s ease;
+}
+.drop:hover > .dropDown{
+  top: 6rem;
+  left: 2rem;
+  opacity: 1;
+  pointer-events: all;
+}
+.dropDown ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dropDown ul li{
+  width: 15rem;
+  padding: 1rem;
+  margin-top: 0.8rem;
+  border-radius: 0.2rem;
+}
+.dropDown ul li:hover{
+  background: rgb(1, 179, 255);
 }
