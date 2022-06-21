@@ -1,0 +1,28 @@
+html{
+  font-size: 64.5%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.fit-image{
+  height: 100vh !important;
+  width: 100vh;
+}
+.navbar{
+  width: 100vw;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.hamburger{
+  display: none;
+}
+.secondPart ul{
+  display: flex;
+}
