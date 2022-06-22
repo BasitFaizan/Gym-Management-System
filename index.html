@@ -1,89 +1,169 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Gym</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="firstPart">
-        <span class="navbarLogo">GYM</span>
-        <div class="hamburger">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-        </svg>
-      </div>
-      </div>
-      <div class="secondPart">
-        <ul>
-          <li>Home</li>
-          <li>Gallery</li>
-          <li class="drop">
-            <span class="mt-2">Shop</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-            </svg>
-            <div class="dropDown">
-              <ul>
-                <li>Suppliment</li>
-                <li>T-shirt</li>
-                <li>Shoes</li>
-                <li>Home Gym Kit</li>
-              </ul>
-            </div>
-          </li>
-          <li>Contact us</li>
-        </ul>
-      </div>
-      <div class="thirdPart">
-        <button class="btn btn-primary">Login/Sign up</button>
-      </div>
-    </nav>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Gym</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="firstPart">
+      <span class="navbarLogo">GYM</span>
+      <div class="hamburger">
+        <svg class="open" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+        <svg class="close" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+        </svg>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="1.jpg" class="d-block w-100 fit-image" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="2.jpg" class="d-block w-100 fit-image" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="3.jpg" class="d-block w-100 fit-image" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-    <!-- Optional JavaScript; choose one of the two! -->
+    <div class="secondPart">
+      <ul>
+        <li>Home</li>
+        <li>Gallery</li>
+        <li class="drop">
+          <span class="mt-2">Shop</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg>
+          <div class="dropDown">
+            <ul>
+              <li>Suppliment</li>
+              <li>T-shirt</li>
+              <li>Shoes</li>
+              <li>Home Gym Kit</li>
+            </ul>
+          </div>
+        </li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+    <div class="thirdPart">
+      <button class="btn btn-primary">Login/Sign up</button>
+    </div>
+  </nav>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <h1 class="centerText">
+    Gallery
+  </h1>
+  <div class="gallery">
+    <div class="horizontal">
+      <img class="galleryImg" src="landScape1.jpg" alt="">
+      <img class="galleryImg" src="landScape2.jpg" alt="">
+      <img class="galleryImg" src="landScape3.jpg" alt="">
+      <img class="galleryImg" src="landScape4.jpg" alt="">
+    </div>
+    <div class="vertical">
+      <img class="galleryImg" src="portrait1.jpg" alt="">
+      <img class="galleryImg" src="portrait2.jpg" alt="">
+    </div>
+  </div>
+  <div class="container">
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+	<h1 class="brand"><span>Phoenix Web Design</span></h1>
+
+	<div class="wrapper">
+
+		<!-- COMPANY INFORMATION -->
+		<div class="company-info">
+			<h3>Phoenix Web Design</h3>
+
+			<ul>
+				<li><i class="fa fa-road"></i> 44 Main Street</li>
+				<li><i class="fa fa-phone"></i> (555) 555-5555</li>
+				<li><i class="fa fa-envelope"></i> test@phoenix.com</li>
+			</ul>
+		</div>
+		<!-- End .company-info -->
+
+		<!-- CONTACT FORM -->
+		<div class="contact">
+			<h3>E-mail Us</h3>
+
+			<form id="contact-form">
+
+				<p>
+					<label>Name</label>
+					<input type="text" name="name" id="name" required>
+				</p>
+
+				<p>
+					<label>Company</label>
+					<input type="text" name="company" id="company">
+				</p>
+
+				<p>
+					<label>E-mail Address</label>
+					<input type="email" name="email" id="email" required>
+				</p>
+
+				<p>
+					<label>Phone Number</label>
+					<input type="text" name="phone" id="phone">
+				</p>
+
+				<p class="full">
+					<label>Message</label>
+					<textarea name="message" rows="5" id="message"></textarea>
+				</p>
+
+				<p class="full">
+					<button type="submit">Submit</button>
+				</p>
+
+			</form>
+			<!-- End #contact-form -->
+		</div>
+		<!-- End .contact -->
+
+	</div>
+	<!-- End .wrapper -->
+</div>
+<!-- End .container -->
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
